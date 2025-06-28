@@ -1,0 +1,56 @@
+Problem Statement:
+A college needs to develop a system to allocate Open Elective Subjects to its respective students. The way the
+system would work is that each student is allowed 5 choices with the respective preference, where number 1
+indicates the first preference, number 2 indicates second preference and so on, the subjects are supposed to be
+allotted on the basis of the Student’s GPA, which means the student with the students with the highest GPAs
+are allotted the subject they want. Every subject has a limited number of seats so if a subject has 60 seats and
+all of them are filled then the student would not be allotted his first preference but instead second would be
+checked, if the second preference is full as well then the third preference would be checked, this process would
+be repeated till the student is allotted a subject of his/her choice. If in case all the preferences that the student
+has selected are already full, then the student would be considered as unallotted and would be marked so.
+
+For example, Mohit has filled his 5 choices with the respective preferences and they are as following:
+
+The below table has the subject to student mapping with the preference
+Note: StudentId and SubjectId are foreign keys in this table.
+Constraints: A single Student cannot select the same subject twice.
+StudentId     SubjectId    Preference
+159103036     PO1491       1
+159103036     PO1492       2
+159103036     PO1493       3
+159103036     PO1494       4
+159103036     PO1495       5
+(Table Name: StudentPreference)
+
+The below table has the details of subjects such as Subject Id, Subject name, and the maximum number of seats
+Note: SubjectId is the primary key for this table
+SubjectId    SubjectName                      MaxSeats    RemainingSeats
+PO1491       Basics of Political Science      60          2
+PO1492       Basics of Accounting             120         119
+PO1493       Basics of Financial Markets      90          90
+PO1494       Eco philosophy                   60          50
+PO1495       Automotive Trends                60          60
+(Table Name: SubjectDetails)
+
+The below table has the student Details such as StudentId, StudentName, GPA and their Branch:
+Note: StudentId is the primary key for this table
+StudentId     StudentName        GPA     Branch    Section
+159103036     Mohit Agarwal      8.9     CCE       A
+159103037     Rohit Agarwal      5.2     CCE       A
+159103038     Shohit Garg        7.1     CCE       B
+159103039     Mrinal Malhotra    7.9     CCE       A
+159103040     Mehreet Singh      5.6     CCE       A
+159103041     Arjun Tehlan       9.2     CCE       B
+(Table Name: StudentDetails)
+
+Final Resultant Table if the student has been allotted to a subject:
+SubjectId    StudentId
+PO1491       159103036
+(Table Name: Allotments)
+
+Final Resultant Table if the student is unallotted:
+StudentId
+159103036
+(Table Name: UnallotedStudents)
+
+Your Task is to write a Stored Procedure to assign all the students to a respective subject according the above stated workflow.
