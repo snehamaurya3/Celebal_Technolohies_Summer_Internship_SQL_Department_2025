@@ -1,0 +1,9 @@
+SCD Types:
+Type 0 : Ignore any changes and audit the changes.
+Type 1 : Overwrite the changes
+Type 2 : History will be added as a new row.
+Type 3 : History will be added as a new column.
+Type 4 : A new dimension will be added
+Type 6 : Combination of Type 2 and Type 3
+
+Create the stored procedure for SCD type 0,SCD type 1,SCD type 2,SCD type 3,SCD type 4,SCD type 6.
