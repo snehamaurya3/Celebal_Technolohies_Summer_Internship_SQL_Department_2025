@@ -1,0 +1,39 @@
+Project Task Document
+
+Project Title: Room Availability Checking during Reservation
+
+Description:
+The task involves implementing a feature in the hospitality management system to
+check room availability during the reservation process. This feature ensures that users
+are informed if the desired room is not available for the specified dates and provides
+alternative options.
+
+Project Objectives:
+1. Develop a stored procedure to check the availability of a room for specified dates.
+2. Implement logic to display room availability status during the reservation process.
+3. Update the reservation process to handle room availability checks gracefully.
+4. Ensure seamless integration of the new feature with existing system functionalities.
+5.Create a Store Procedure for Login user, register rooms and Hotels, Generate Bill,
+Check-in and Check-Out maintenance.
+
+Scope:
+The project includes developing the necessary stored procedures and logic within the
+reservation module of the hospitality management system to check room availability. It
+does not involve significant changes to other modules or functionalities.
+
+Deliverables:
+1. Stored procedure for checking room availability, Login user, register rooms and
+Hotels, Generate Bill, Check-in and Check-Out maintenance.
+2. Updated reservation process with room availability checking logic.
+3. User interface enhancements to display room availability status and alternative
+options.
+4. Testing and validation of the implemented feature to ensure correctness and
+reliability.
+
+Resources:
+- Access to the hospitality management system codebase.
+- Documentation and guidelines for system architecture and database schema.
+- Collaboration with the database and frontend teams for integration and testing.
+
+Notes:
+- Please create the relational database schema also.
